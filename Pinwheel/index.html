@@ -4,48 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pinwheel</title>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Oswald:wght@500;600&display=swap"
+        rel="stylesheet">
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
+
 
 <body>
 
-    <!-- ===== NGƯỜI 1 ===== -->
+    <!-- ===================================================
+         NGƯỜI 1
+         Phụ trách: Header, Hero, Key Features
+         =================================================== -->
 
-    <!-- HEADER -->
-    <!-- Người 1: UI + toggle menu -->
+    <!-- ─────────────────────────────────────────
+         HEADER
+         - Logo (bên trái)
+         - Menu điều hướng: Home, About, Blog, Features,
+           How It Works, Pages (dropdown), Contact
+         - Nút "Sign Up Now" (bên phải)
+         - JS: toggle menu mobile (hamburger open/close)
+         ───────────────────────────────────────── -->
     <header></header>
 
-    <!-- HERO -->
-    <!-- Người 1: UI + counter animation -->
-    <section id="hero"></section>
+    <!-- ─────────────────────────────────────────
+         HERO (Banner)
+         - Tiêu đề lớn + đoạn mô tả ngắn
+         - Nút CTA "Download The Theme"
+         - Ảnh minh hoạ bên phải
+         - Shape trang trí góc trên phải (SVG)
+         - JS: counter animation (đếm số liệu nếu có)
+         ───────────────────────────────────────── -->
+    <section></section>
 
-    <!-- GALLERY -->
-    <!-- Người 1: UI + responsive + ảnh -->
-    <section id="gallery"></section>
+    <!-- ─────────────────────────────────────────
+         KEY FEATURES
+         - Tiêu đề section + mô tả (2 cột)
+         - Grid 10 thẻ tính năng (2-3-4 cột tuỳ breakpoint):
+           Live Caption, Smart Reply, Sound Amplifier,
+           Gesture Navigation, Dark Theme, Privacy Controls,
+           Location Controls, Security Updates,
+           Focus Mode, Family Link
+         - Mỗi thẻ: tiêu đề + mô tả + icon (góc dưới)
+         - Shape trang trí góc trên trái
+         ───────────────────────────────────────── -->
+    <section></section>
 
 
 
-    <!-- ===== NGƯỜI 2 ===== -->
+    <!-- ===================================================
+         NGƯỜI 2
+         Phụ trách: Services, Reviews, CTA, Footer
+         =================================================== -->
 
-    <!-- WORKS -->
-    <!-- Người 2: UI + hover effect -->
+    <!-- ─────────────────────────────────────────
+         SERVICES (How It Works)
+         Gồm 3 khối layout ngang (2 cột mỗi khối):
+
+         Khối 1 — Tab switcher (ảnh bên phải):
+           - Tiêu đề + mô tả
+           - 3 tab nav (icon + text), click đổi ảnh
+           - JS: xử lý active tab, swap ảnh tương ứng
+
+         Khối 2 — Danh sách tính năng (ảnh bên trái):
+           - Tiêu đề + mô tả
+           - 3 dòng checkmark item
+           - Ảnh + shape trang trí phía sau
+
+         Khối 3 — Video (thumbnail bên phải):
+           - Tiêu đề + mô tả + nút "Know about us"
+           - Thumbnail ảnh + nút play ở giữa
+           - JS: click play mở/hiện iframe YouTube
+         ───────────────────────────────────────── -->
     <section id="works"></section>
 
-    <!-- MEMBERS -->
-    <!-- Người 2: UI + responsive -->
+    <!-- ─────────────────────────────────────────
+         REVIEWS (Testimonials)
+         - Tiêu đề section + mô tả (2 cột)
+         - Swiper carousel tự động chạy (loop):
+           Mỗi thẻ: avatar + tên + công ty + đoạn nhận xét
+           + rating sao (4/5 sao)
+         - Pagination dots bên dưới
+         - JS (Swiper): khởi tạo carousel, cấu hình autoplay
+         ───────────────────────────────────────── -->
     <section id="members"></section>
 
-    <!-- FOOTER -->
-    <!-- Người 2: UI + link + icon -->
+    <!-- ─────────────────────────────────────────
+         CALL TO ACTION (CTA)
+         - Nền gradient bo góc (rounded-b lớn)
+         - Tiêu đề lớn màu trắng + mô tả (2 cột)
+         - Nút "Download The Theme" (màu trắng)
+         ───────────────────────────────────────── -->
+    <section></section>
+
+    <!-- ─────────────────────────────────────────
+         FOOTER
+         - Cột 1: Logo + mô tả ngắn
+         - Cột 2: Socials (email + 4 icon mạng xã hội:
+                  Facebook, Twitter, LinkedIn, Threads)
+         - Cột 3: Quick Links (About, Category,
+                  Testimonial, Contact)
+         - Cột 4: Location & Contact (địa chỉ + SĐT)
+         - Dòng cuối: copyright + link Themefisher
+         ───────────────────────────────────────── -->
     <footer></footer>
 
 
-    <!-- JS -->
-    <!-- Mỗi người viết JS riêng phần của mình -->
+    <!-- ===================================================
+         JS — Mỗi người viết riêng phần của mình
+         =================================================== -->
     <script>
-        // Người 1: menu + counter
-        // Người 2: hover + xử lý khác
+        // ── NGƯỜI 1 ──────────────────────────────────────
+        // - Toggle menu mobile (hamburger open / close)
+        // - Counter animation số liệu ở Hero (nếu có)
+
+        // ── NGƯỜI 2 ──────────────────────────────────────
+        // - Tab switcher section Services (khối 1)
+        // - Mở/đóng video YouTube khi click play (khối 3)
+        // - Khởi tạo Swiper carousel cho Reviews
     </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+    <!-- flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
 </body>
 
