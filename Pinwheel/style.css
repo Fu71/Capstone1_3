@@ -43,6 +43,8 @@ body {
     /* Hiệu ứng mượt mà khi hover */
 }
 
+
+
 /* Tạo lớp nền mờ (glow) phía sau */
 .btn-gradient::after {
     content: "";
@@ -119,4 +121,28 @@ body {
     position: relative;
     z-index: 10;
     /* chồng lên card */
+}
+
+/* ── Swiper pagination ── */
+.swiper-pagination {
+    position: relative !important;
+    bottom: auto !important;
+    margin-top: 40px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.swiper-pagination-bullet {
+    background: #d1d5db;
+    opacity: 1;
+    margin: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #FA5E19;
+    width: 24px;
+    border-radius: 999px;
+    transition: width .3s;
 }
